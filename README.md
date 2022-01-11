@@ -32,7 +32,7 @@ Example:
 After installing, you should see this icon on the top-right corner of your screen 
 ![Image 1](https://i.imgur.com/lMmJfLY.png)
 
-Now go to any CubeCraft forums profile and click that icon and you should see a download promt and you can just select "Save File"
+Now go to any CubeCraft forums profile and click that icon. If you see the prompt, just select "Save File"
 ![Image 2](https://i.imgur.com/egcYYPP.png)
 
 Now you should have the json file in your Downloads folder, if you encounter any issues, please create an issue/pull request here, thank you!
