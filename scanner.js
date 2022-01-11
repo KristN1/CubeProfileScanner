@@ -70,7 +70,7 @@ var profile = {
 }
 
 function Download() {
-    var json = JSON.stringify(profile);
+    var json = JSON.stringify(profile, null, 4);
     var blob = new Blob([json], {type: "application/json"});
     var url = URL.createObjectURL(blob);
     var a = document.createElement("a");
