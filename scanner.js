@@ -5,7 +5,7 @@ var user = {
 };
 
 function getPfp() {
-    return document.getElementsByClassName(`avatar-u${user.id}-l`)[0].src;
+    return String(document.getElementsByClassName(`avatar-u${user.id}-l`)[0].src);
 }
 
 function getBanner() {
@@ -34,11 +34,15 @@ function getBadges() {
     return badges;
 }
 
-function getAttributes() {
+function getDescription(){
+    return document.getElementsByClassName("memberHeader-blurb")[0].innerText;
+}
+
+function getStats() {
     let memberStats = document.getElementsByClassName("pairJustifier")[0];
     let memberActivity = document.getElementsByClassName("uix_memberHeader__extra")[0];
 
-    let attributes = {
+    let stats = {
         "messages": memberStats.children[0].children[1].innerText,
         "featured_content": memberStats.children[1].children[1].innerText,
         "reaction_score": memberStats.children[2].children[1].innerText,
@@ -48,5 +52,28 @@ function getAttributes() {
         "last_seen": memberActivity.children[1].children[0].children[1].innerText,
     };
 
-    return attributes;
+    return stats;
 }
+
+var profile = {
+    "pfp": getPfp(),
+    "banner": getBanner(),
+    "name": getName(),
+    "badges": getBadges(),
+    "description": getDescription(),
+    "stats": getStats(),
+}
+
+function Download() {
+    var json = JSON.stringify(profile);
+    var blob = new Blob([json], {type: "application/json"});
+    var _url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = _url;
+    a.download = `${user.name}-${user.id}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+Download();
