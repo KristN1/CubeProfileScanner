@@ -1,5 +1,3 @@
-console.clear();
-
 let url = window.location.href;
 var user = {
     name: url.split("/")[4].split(".")[0],
@@ -26,11 +24,11 @@ function getName() {
 }
 
 function getBadges() {
-    let allBadges = document.getElementsByClassName("memberHeader-banners");
+    let allBadges = document.getElementsByClassName("memberHeader-banners")[0];
 
     let badges = [];
-    for (let i = 0; i < allBadges.length; i++) {
-        badges.push(allBadges[i].children[0].innerText);
+    for (let i = 0; i < allBadges.childElementCount; i++) {
+        badges.push(allBadges.children[i].innerText);
     }
 
     return badges;
