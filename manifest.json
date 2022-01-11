@@ -1,0 +1,23 @@
+{
+
+    "manifest_version": 2,
+    "name": "CubeProfileScanner",
+    "version": "0.1",
+  
+    "description": "Scan your CubeCraft forums profile and get the data",
+  
+    "icons": {
+      "48": "icons/large.png"
+    },
+
+    "browser_action": {
+        "default_icon": "icons/small.png",
+        "default_title": "CubeProfileScanner",
+        "default_popup": "popup/popup.html"
+    },
+
+    "permissions": [
+        "activeTab"
+    ]
+}
+  

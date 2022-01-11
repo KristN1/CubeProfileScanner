@@ -1,0 +1,1 @@
+browser.tabs.executeScript({file: "/scanner.js"});
