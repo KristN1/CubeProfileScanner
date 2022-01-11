@@ -10,15 +10,30 @@ if (currentUrl.includes("https://www.cubecraft.net/members/") == false) {
 }
 
 function getPfp() {
-    return String(document.getElementsByClassName(`avatar-u${user.id}-l`)[0].src);
+    let pfp =  String(document.getElementsByClassName(`avatar-u${user.id}-l`)[0].src);
+    if (pfp == "undefined") {
+        return null;
+    } else {
+        return pfp;
+    }
 }
 
 function getBanner() {
-    return "https" + document.getElementsByClassName("memberProfileBanner")[0].style.backgroundImage.split("url(\"")[1].split("\")")[0];
+    try {
+        return "https" + document.getElementsByClassName("memberProfileBanner")[0].style.backgroundImage.split("url(\"")[1].split("\")")[0];
+    } catch (e) {
+        return null;
+    }
 }
 
 function getName() {
     let usernameElem = document.getElementsByClassName("username ")[0].children[0]
+
+    if (usernameElem == null) {
+        usernameElem = document.getElementsByClassName("username ")[0]
+    }
+
+    console.log(usernameElem);
 
     let username = {
         "text": usernameElem.innerText,
@@ -30,6 +45,10 @@ function getName() {
 
 function getBadges() {
     let allBadges = document.getElementsByClassName("memberHeader-banners")[0];
+
+    if (allBadges == null) {
+        return null;
+    }
 
     let badges = [];
     for (let i = 0; i < allBadges.childElementCount; i++) {
