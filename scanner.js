@@ -52,15 +52,3 @@ function getAttributes() {
 
     return attributes;
 }
-
-var pfp = getPfp();
-var banner = getBanner();
-var username = getName();
-var badges = getBadges();
-var attributes = getAttributes();
-
-console.log(pfp);
-console.log(banner);
-console.log(username);
-console.log(badges);
-console.log(attributes);
