@@ -1,8 +1,13 @@
-let url = window.location.href;
+var currentUrl = window.location.href;
 var user = {
-    name: url.split("/")[4].split(".")[0],
-    id: url.split("/")[4].split(".")[1],
+    name: currentUrl.split("/")[4].split(".")[0],
+    id: currentUrl.split("/")[4].split(".")[1],
 };
+
+if (currentUrl.includes("https://www.cubecraft.net/members/") == false) {
+    alert("Not a valid profile!");
+    throw new Error("not cubecraft.net");
+}
 
 function getPfp() {
     return String(document.getElementsByClassName(`avatar-u${user.id}-l`)[0].src);
@@ -67,9 +72,9 @@ var profile = {
 function Download() {
     var json = JSON.stringify(profile);
     var blob = new Blob([json], {type: "application/json"});
-    var _url = URL.createObjectURL(blob);
+    var url = URL.createObjectURL(blob);
     var a = document.createElement("a");
-    a.href = _url;
+    a.href = url;
     a.download = `${user.name}-${user.id}.json`;
     document.body.appendChild(a);
     a.click();
