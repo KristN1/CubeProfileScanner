@@ -4,7 +4,7 @@
     "name": "CubeProfileScanner",
     "version": "1.0",
   
-    "description": "Scan your CubeCraft forums profile and get the data",
+    "description": "Scan your CubeCraft forums profile and get the data in json",
   
     "icons": {
       "48": "icons/large.png"
