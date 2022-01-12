@@ -33,11 +33,11 @@ function getName() {
         usernameElem = document.getElementsByClassName("username ")[0]
     }
 
-    console.log(usernameElem);
+    const rgba2hex = (rgba) => `#${rgba.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+\.{0,1}\d*))?\)$/).slice(1).map((n, i) => (i === 3 ? Math.round(parseFloat(n) * 255) : parseFloat(n)).toString(16).padStart(2, '0').replace('NaN', '')).join('')}`
 
     let username = {
         "text": usernameElem.innerText,
-        "color": getComputedStyle(usernameElem).color
+        "color": rgba2hex(getComputedStyle(usernameElem).color)
     };
 
     return username;

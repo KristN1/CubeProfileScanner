@@ -8,7 +8,7 @@ Example:
     "banner": "https//forums.cubecraftcdn.com/xenforo/data/profile_banners/l/218/218925.jpg?1633274631",
     "name": {
         "text": "KristN",
-        "color": "rgb(249, 44, 52)"
+        "color": "#f92c34"
     },
     "badges": [
         "Team CubeCraft",
@@ -21,7 +21,7 @@ Example:
         "reaction_score": "765",
         "points": "179",
         "joined_at": "Oct 4, 2016",
-        "last_seen": "A moment ago · Viewing member profile KristN"
+        "last_seen": "5 minutes ago · Viewing member profile KristN"
     }
 }
 ```
