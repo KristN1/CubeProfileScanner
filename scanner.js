@@ -9,12 +9,12 @@ if (currentUrl.includes("https://www.cubecraft.net/members/") == false) {
     throw new Error("not cubecraft.net");
 }
 
-function getPfp() {
-    let pfp =  String(document.getElementsByClassName(`avatar-u${user.id}-l`)[0].src);
-    if (pfp == "undefined") {
+function getAvatar() {
+    let avatar =  String(document.getElementsByClassName(`avatar-u${user.id}-l`)[0].src);
+    if (avatar == "undefined") {
         return null;
     } else {
-        return pfp;
+        return avatar;
     }
 }
 
@@ -80,7 +80,7 @@ function getStats() {
 }
 
 var profile = {
-    "pfp": getPfp(),
+    "avatar": getAvatar(),
     "banner": getBanner(),
     "name": getName(),
     "badges": getBadges(),

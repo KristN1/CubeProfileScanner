@@ -4,7 +4,7 @@
 Example:
 ```json
 {
-    "pfp": "https://forums.cubecraftcdn.com/xenforo/data/avatars/l/218/218925.jpg?1633643936",
+    "avatar": "https://forums.cubecraftcdn.com/xenforo/data/avatars/l/218/218925.jpg?1633643936",
     "banner": "https//forums.cubecraftcdn.com/xenforo/data/profile_banners/l/218/218925.jpg?1633274631",
     "name": {
         "text": "KristN",
