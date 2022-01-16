@@ -25,8 +25,8 @@ Example:
     }
 }
 ```
-## Installation 
-*coming soon*
+## Downloads 
+Firefox - https://addons.mozilla.org/en-US/firefox/addon/cubeprofilescanner/
 
 ## Usage
 After installing, you should see this icon on the top-right corner of your screen 
