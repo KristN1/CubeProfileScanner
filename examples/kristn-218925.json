@@ -1,6 +1,6 @@
 {
     "avatar": "https://forums.cubecraftcdn.com/xenforo/data/avatars/l/218/218925.jpg?1633643936",
-    "banner": "https//forums.cubecraftcdn.com/xenforo/data/profile_banners/l/218/218925.jpg?1633274631",
+    "banner": "https://forums.cubecraftcdn.com/xenforo/data/profile_banners/l/218/218925.jpg?1633274631",
     "name": {
         "text": "KristN",
         "color": "#f92c34"
@@ -9,13 +9,13 @@
         "Team CubeCraft",
         "🌐 Sr. Translator"
     ],
-    "description": "Señor Translator · 15 · From api_keys WHERE api_key = ?, [hashed_key]",
+    "description": "Señor Translator · 15 · From /lib/legacy/",
     "stats": {
-        "messages": "148",
+        "messages": "150",
         "featured_content": "0",
-        "reaction_score": "765",
+        "reaction_score": "804",
         "points": "179",
         "joined_at": "Oct 4, 2016",
-        "last_seen": "5 minutes ago · Viewing member profile KristN"
+        "last_seen": "A moment ago · Viewing member profile KristN"
     }
 }

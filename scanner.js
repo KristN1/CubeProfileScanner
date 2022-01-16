@@ -26,7 +26,7 @@ function getAvatar() {
 
 function getBanner() {
     try {
-        return "https" + document.getElementsByClassName("memberProfileBanner")[0].style.backgroundImage.split("url(\"")[1].split("\")")[0];
+        return "https:" + document.getElementsByClassName("memberProfileBanner")[0].style.backgroundImage.split("url(\"")[1].split("\")")[0];
     } catch (e) {
         return null;
     }
