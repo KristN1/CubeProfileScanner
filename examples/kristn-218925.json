@@ -9,13 +9,16 @@
         "Team CubeCraft",
         "🌐 Sr. Translator"
     ],
-    "description": "Señor Translator · 15 · From /lib/legacy/",
+    "description": {
+        "title": "Señor Translator",
+        "text": "15 · From /lib/legacy/"
+    },
     "stats": {
         "messages": "150",
         "featured_content": "0",
         "reaction_score": "804",
         "points": "179",
         "joined_at": "Oct 4, 2016",
-        "last_seen": "A moment ago · Viewing member profile KristN"
+        "last_seen": "13 minutes ago · Viewing member profile KristN"
     }
 }

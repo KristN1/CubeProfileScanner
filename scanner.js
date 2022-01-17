@@ -65,7 +65,14 @@ function getBadges() {
 }
 
 function getDescription(){
-    return document.getElementsByClassName("memberHeader-blurb")[0].innerText;
+    allDescriptions = document.getElementsByClassName("memberHeader-blurb")[0].innerText.split(" · ");
+
+    description = {
+        "title": allDescriptions[0],
+        "text": allDescriptions.slice(1, allDescriptions.length).join(" · ").toString()
+    };
+
+    return description;
 }
 
 function getStats() {
