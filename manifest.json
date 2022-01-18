@@ -1,6 +1,6 @@
 {
 
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "CubeProfileScanner",
     "version": "1.1.0",
   
@@ -10,14 +10,15 @@
       "48": "icons/large.png"
     },
 
-    "browser_action": {
+    "action": {
         "default_icon": "icons/small.png",
         "default_title": "CubeProfileScanner",
         "default_popup": "popup/popup.html"
     },
 
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "scripting"
     ]
 }
   
