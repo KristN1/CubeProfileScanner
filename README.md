@@ -33,6 +33,7 @@ Example:
 The source code can be found in branches
 
 Firefox - https://github.com/KristN1/CubeProfileScanner/tree/firefox
+
 Chromium - https://github.com/KristN1/CubeProfileScanner/tree/chromium
 
 ## Downloads 
