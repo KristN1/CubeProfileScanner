@@ -1,4 +1,4 @@
-# CubeProfileScanner
+# CubeProfileScanner - Firefox
 
 ### With this browser extension, you can quickly get data from your forums profile into a json file
 Example:
@@ -28,8 +28,12 @@ Example:
     }
 }
 ```
-## Downloads 
-Firefox - https://addons.mozilla.org/en-US/firefox/addon/cubeprofilescanner/
+## Download
+https://addons.mozilla.org/en-US/firefox/addon/cubeprofilescanner/
+
+```sh
+$ git clone https://github.com/KristN1/CubeProfileScanner.git
+```
 
 ## Usage
 After installing, you should see this icon on the top-right corner of your screen 
