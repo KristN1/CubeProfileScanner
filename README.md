@@ -29,8 +29,9 @@ Example:
 }
 ```
 ## Download
-https://addons.mozilla.org/en-US/firefox/addon/cubeprofilescanner/
+Addons store - https://addons.mozilla.org/en-US/firefox/addon/cubeprofilescanner/
 
+Manual - 
 ```sh
 $ git clone https://github.com/KristN1/CubeProfileScanner.git
 ```
