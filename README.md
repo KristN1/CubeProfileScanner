@@ -29,7 +29,7 @@ Example:
 }
 ```
 ## Downloads 
-Firefox - https://addons.mozilla.org/en-US/firefox/addon/cubeprofilescanner/
+Chrome web store - https://chrome.google.com/webstore/detail/cubeprofilescanner/fjchilbpmnbokjamogemggbgheplmkij
 
 ## Usage
 After installing, you should see this icon on the top-right corner of your screen 
